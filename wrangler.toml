@@ -4,4 +4,11 @@ compatibility_date = "2025-04-12"
 
 main = "index.ts"
 
+# 根目录静态资源绑定（你的 HTML/CSS/JS 都在仓库根目录）
+[assets]
+directory = "./"
+binding = "ASSETS"
+
+[observability.logs]
+enabled = true
  
