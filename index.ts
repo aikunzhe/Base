@@ -20,7 +20,7 @@ export default {
     }
 
     // 其他资源
-    const resp = await env.ASSETS.fetch(request);
+    const resp = await env.ASSETS.fetch(request, { cacheTtl: 31536000 });
 
     // 如果不是文件且 404，回退 index.html（SPA 路由）
     if (resp.status === 404 && !path.includes(".")) {
