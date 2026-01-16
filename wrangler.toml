@@ -8,6 +8,8 @@ main = "index.ts"
 [assets]
 directory = "./"
 binding = "ASSETS"
+# 给静态资源设置长缓存
+cache_ttl = 31536000  # 单位秒，1年
 
 [observability.logs]
 enabled = true
